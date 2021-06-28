@@ -2,27 +2,28 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/QueryFragment"
+    android:id="@+id/nav_graph"    >
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.mysunflower.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/QueryFragment"
+        android:name="com.example.mysunflower.QueryFragment"
+        tools:layout="@layout/fragment_query">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_query_to_display"
+            app:destination="@id/DisplayFragment" />
     </fragment>
+
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.mysunflower.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/DisplayFragment"
+        android:name="com.example.mysunflower.DisplayFragment"
+        android:label="DisplayFragment"
+        tools:layout="@layout/fragment_display">
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+        <argument
+            android:name="query"
+            app:argType="string" />
     </fragment>
+
 </navigation>

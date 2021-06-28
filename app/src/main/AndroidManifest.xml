@@ -12,12 +12,12 @@
         android:label="PicApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MySunflower">
+        android:theme="@style/Theme.Sunflower">
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="PicApp"
-            android:theme="@style/Theme.MySunflower.NoActionBar">
+            android:theme="@style/Theme.Sunflower.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

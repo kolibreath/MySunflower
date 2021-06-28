@@ -1,6 +1,7 @@
 package com.example.mysunflower.api
 
 import com.example.mysunflower.BuildConfig
+import com.example.mysunflower.data.UnsplashSearchResponse
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
